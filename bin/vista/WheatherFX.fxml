@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.WheatherFXController">
+   <children>
+      <AnchorPane id="anchor" prefHeight="700.0" prefWidth="1200.0" styleClass="anchor" stylesheets="@../css/Style.css" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label id="dia" fx:id="dia_1" layoutX="53.0" layoutY="186.0" stylesheets="@../css/Style.css" text="Dia1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="dia" fx:id="dia_4" layoutX="562.0" layoutY="185.0" stylesheets="@../css/Style.css" text="Dia4">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="dia" fx:id="dia_5" layoutX="737.0" layoutY="186.0" stylesheets="@../css/Style.css" text="Dia5">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="dia" fx:id="dia_6" layoutX="914.0" layoutY="186.0" stylesheets="@../css/Style.css" text="Dia6">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="dia" fx:id="dia_7" layoutX="1086.0" layoutY="186.0" stylesheets="@../css/Style.css" text="Dia7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="dia" fx:id="dia_3" layoutX="399.0" layoutY="185.0" stylesheets="@../css/Style.css" text="Dia3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="dia" fx:id="dia_2" layoutX="222.0" layoutY="185.0" stylesheets="@../css/Style.css" text="Dia2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="fecha" fx:id="fecha_1" layoutX="41.0" layoutY="203.0" stylesheets="@../css/Style.css" text="0000-00-00">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="fecha" fx:id="fecha_2" layoutX="210.0" layoutY="203.0" stylesheets="@../css/Style.css" text="0000-00-00">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="fecha" fx:id="fecha_3" layoutX="387.0" layoutY="203.0" stylesheets="@../css/Style.css" text="0000-00-00">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="fecha" fx:id="fecha_4" layoutX="557.0" layoutY="203.0" stylesheets="@../css/Style.css" text="0000-00-00">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="fecha" fx:id="fecha_5" layoutX="732.0" layoutY="204.0" stylesheets="@../css/Style.css" text="0000-00-00">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="fecha" fx:id="fecha_6" layoutX="902.0" layoutY="203.0" stylesheets="@../css/Style.css" text="0000-00-00">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="fecha" fx:id="fecha_7" layoutX="1074.0" layoutY="203.0" stylesheets="@../css/Style.css" text="0000-00-00">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="temperatura" fx:id="tempMaxDia_1" layoutX="49.0" layoutY="234.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="temperatura" fx:id="tempMinDia_1" layoutX="84.0" layoutY="234.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="27.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/Hot%20free%20icons%20designed%20by%20Freepik.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="73.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/Cold%20free%20vector%20icons%20designed%20by%20Freepik.jpg" />
+               </image>
+            </ImageView>
+            <Label id="temperatura" fx:id="tempMaxDia_2" layoutX="218.0" layoutY="234.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="temperatura" fx:id="tempMinDia_2" layoutX="253.0" layoutY="234.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="196.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/Hot%20free%20icons%20designed%20by%20Freepik.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="242.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/Cold%20free%20vector%20icons%20designed%20by%20Freepik.jpg" />
+               </image>
+            </ImageView>
+            <Label id="temperatura" fx:id="tempMaxDia_3" layoutX="395.0" layoutY="234.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="temperatura" fx:id="tempMinDia_3" layoutX="430.0" layoutY="234.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="373.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/Hot%20free%20icons%20designed%20by%20Freepik.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="419.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/Cold%20free%20vector%20icons%20designed%20by%20Freepik.jpg" />
+               </image>
+            </ImageView>
+            <Label id="temperatura" fx:id="tempMaxDia_4" layoutX="565.0" layoutY="234.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="temperatura" fx:id="tempMinDia_4" layoutX="600.0" layoutY="234.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="543.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/Hot%20free%20icons%20designed%20by%20Freepik.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="589.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/Cold%20free%20vector%20icons%20designed%20by%20Freepik.jpg" />
+               </image>
+            </ImageView>
+            <Label id="temperatura" fx:id="tempMaxDia_5" layoutX="740.0" layoutY="234.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="temperatura" fx:id="tempMinDia_5" layoutX="775.0" layoutY="234.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="718.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/Hot%20free%20icons%20designed%20by%20Freepik.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="764.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/Cold%20free%20vector%20icons%20designed%20by%20Freepik.jpg" />
+               </image>
+            </ImageView>
+            <Label id="temperatura" fx:id="tempMaxDia_6" layoutX="910.0" layoutY="234.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="temperatura" fx:id="tempMinDia_6" layoutX="945.0" layoutY="234.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="888.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/Hot%20free%20icons%20designed%20by%20Freepik.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="934.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/Cold%20free%20vector%20icons%20designed%20by%20Freepik.jpg" />
+               </image>
+            </ImageView>
+            <Label id="temperatura" fx:id="tempMaxDia_7" layoutX="1082.0" layoutY="234.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="temperatura" fx:id="tempMinDia_7" layoutX="1117.0" layoutY="234.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="1060.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/Hot%20free%20icons%20designed%20by%20Freepik.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="1106.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/Cold%20free%20vector%20icons%20designed%20by%20Freepik.jpg" />
+               </image>
+            </ImageView>
+            <Label id="lluviaTxt" fx:id="precipitacion1" layoutX="26.0" layoutY="381.0" stylesheets="@../css/Style.css" text="Prob.Precipitacion" />
+            <Label id="lluviaTxt" fx:id="precipitacion3" layoutX="371.0" layoutY="381.0" stylesheets="@../css/Style.css" text="Prob.Precipitacion" />
+            <Label id="lluviaTxt" fx:id="precipitacion4" layoutX="542.0" layoutY="383.0" stylesheets="@../css/Style.css" text="Prob.Precipitacion" />
+            <Label id="lluviaTxt" fx:id="precipitacion5" layoutX="717.0" layoutY="383.0" stylesheets="@../css/Style.css" text="Prob.Precipitacion" />
+            <Label id="lluviaTxt" fx:id="precipitacion6" layoutX="887.0" layoutY="381.0" stylesheets="@../css/Style.css" text="Prob.Precipitacion" />
+            <Label id="lluviaTxt" fx:id="precipitacion7" layoutX="1059.0" layoutY="383.0" stylesheets="@../css/Style.css" text="Prob.Precipitacion" />
+            <Label id="lluviaTxt" fx:id="precipitacion2" layoutX="195.0" layoutY="381.0" stylesheets="@../css/Style.css" text="Prob.Precipitacion" />
+            <Label id="lluvia" fx:id="lluviaDia_1" layoutX="62.0" layoutY="398.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="lluvia" fx:id="lluviaDia_2" layoutX="219.0" layoutY="400.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="lluvia" fx:id="lluviaDia_3" layoutX="408.0" layoutY="400.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="lluvia" fx:id="lluviaDia_4" layoutX="578.0" layoutY="400.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="lluvia" fx:id="lluviaDia_5" layoutX="754.0" layoutY="400.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="lluvia" fx:id="lluviaDia_6" layoutX="923.0" layoutY="400.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="lluvia" fx:id="lluviaDia_7" layoutX="1096.0" layoutY="398.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="33.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/728093.png" />
+               </image>
+            </ImageView>
+            <Label id="humedad" fx:id="HumedadMaxDia_1" layoutX="78.0" layoutY="316.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="humedad" fx:id="HumedadMinDia_1" layoutX="78.0" layoutY="339.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="203.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/728093.png" />
+               </image>
+            </ImageView>
+            <Label id="humedad" fx:id="HumedadMaxDia_2" layoutX="248.0" layoutY="317.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="humedad" fx:id="HumedadMinDia_2" layoutX="248.0" layoutY="340.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="380.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/728093.png" />
+               </image>
+            </ImageView>
+            <Label id="humedad" fx:id="HumedadMaxDia_3" layoutX="425.0" layoutY="318.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="humedad" fx:id="HumedadMinDia_3" layoutX="425.0" layoutY="341.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="550.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/728093.png" />
+               </image>
+            </ImageView>
+            <Label id="humedad" fx:id="HumedadMaxDia_4" layoutX="595.0" layoutY="319.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="humedad" fx:id="HumedadMinDia_4" layoutX="595.0" layoutY="342.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="724.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/728093.png" />
+               </image>
+            </ImageView>
+            <Label id="humedad" fx:id="HumedadMaxDia_5" layoutX="769.0" layoutY="317.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="humedad" fx:id="HumedadMinDia_5" layoutX="769.0" layoutY="340.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="895.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/728093.png" />
+               </image>
+            </ImageView>
+            <Label id="humedad" fx:id="HumedadMaxDia_6" layoutX="940.0" layoutY="319.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="humedad" fx:id="HumedadMinDia_6" layoutX="940.0" layoutY="342.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="48.0" fitWidth="45.0" layoutX="1074.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/728093.png" />
+               </image>
+            </ImageView>
+            <Label id="humedad" fx:id="HumedadMaxDia_7" layoutX="1119.0" layoutY="317.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="humedad" fx:id="HumedadMinDia_7" layoutX="1119.0" layoutY="340.0" stylesheets="@../css/Style.css" text="00%">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="cielo" fx:id="cieloDia_1" layoutX="33.0" layoutY="426.0" stylesheets="@../css/Style.css" text="Estado del cielo" />
+            <Label id="cielo" fx:id="cieloDia_7" layoutX="1064.0" layoutY="426.0" stylesheets="@../css/Style.css" text="Estado del cielo" />
+            <Label id="cielo" fx:id="cieloDia_6" layoutX="893.0" layoutY="428.0" stylesheets="@../css/Style.css" text="Estado del cielo" />
+            <Label id="cielo" fx:id="cieloDia_5" layoutX="726.0" layoutY="428.0" stylesheets="@../css/Style.css" text="Estado del cielo" />
+            <Label id="cielo" fx:id="cieloDia_4" layoutX="547.0" layoutY="428.0" stylesheets="@../css/Style.css" text="Estado del cielo" />
+            <Label id="cielo" fx:id="cieloDia_3" layoutX="377.0" layoutY="428.0" stylesheets="@../css/Style.css" text="Estado del cielo" />
+            <Label id="cielo" fx:id="cieloDia_2" layoutX="201.0" layoutY="428.0" stylesheets="@../css/Style.css" text="Estado del cielo" />
+            <ImageView fx:id="cielo_1" fitHeight="45.0" fitWidth="54.0" layoutX="46.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/icons/1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cielo_7" fitHeight="45.0" fitWidth="54.0" layoutX="1082.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/icons/1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cielo_6" fitHeight="45.0" fitWidth="54.0" layoutX="906.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/icons/1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cielo_5" fitHeight="45.0" fitWidth="54.0" layoutX="736.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/icons/1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cielo_4" fitHeight="45.0" fitWidth="54.0" layoutX="561.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/icons/1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cielo_3" fitHeight="45.0" fitWidth="54.0" layoutX="391.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/icons/1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cielo_2" fitHeight="45.0" fitWidth="54.0" layoutX="214.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/icons/1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="54.0" layoutX="741.0" layoutY="541.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/OIP.jpeg" />
+               </image>
+            </ImageView>
+            <Label id="velocidad" fx:id="DireccionVelocidadViento_1" layoutX="37.0" layoutY="518.0" stylesheets="@../css/Style.css" text="vel-00-m/h">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="54.0" layoutX="566.0" layoutY="541.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/OIP.jpeg" />
+               </image>
+            </ImageView>
+            <Label id="velocidad" fx:id="DireccionVelocidadViento_4" layoutX="553.0" layoutY="518.0" stylesheets="@../css/Style.css" text="vel-00-m/h">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="54.0" layoutX="390.0" layoutY="541.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/OIP.jpeg" />
+               </image>
+            </ImageView>
+            <Label id="velocidad" fx:id="DireccionVelocidadViento_2" layoutX="199.0" layoutY="518.0" stylesheets="@../css/Style.css" text="vel-00-m/h">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="54.0" layoutX="212.0" layoutY="541.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/OIP.jpeg" />
+               </image>
+            </ImageView>
+            <Label id="velocidad" fx:id="DireccionVelocidadViento_3" layoutX="385.0" layoutY="518.0" stylesheets="@../css/Style.css" text="vel-00-m/h">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="45.0" fitWidth="54.0" layoutX="916.0" layoutY="541.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/OIP.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="54.0" layoutX="1088.0" layoutY="541.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/OIP.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="45.0" fitWidth="54.0" layoutX="50.0" layoutY="541.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/OIP.jpeg" />
+               </image>
+            </ImageView>
+            <Label id="velocidad" fx:id="DireccionVelocidadViento_5" layoutX="728.0" layoutY="518.0" stylesheets="@../css/Style.css" text="vel-00-m/h">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="velocidad" fx:id="DireccionVelocidadViento_6" layoutX="899.0" layoutY="518.0" stylesheets="@../css/Style.css" text="vel-00-m/h">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label id="velocidad" fx:id="DireccionVelocidadViento_7" layoutX="1076.0" layoutY="518.0" stylesheets="@../css/Style.css" text="vel-00-m/h">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="59.0" fitWidth="54.0" layoutX="29.0" layoutY="605.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/Thermometer%20stock%20illustration_%20Illustration%20of%20hotter%20-%2016734905.jpeg" />
+               </image>
+            </ImageView>
+            <Label id="uva" fx:id="uvaDia_1" layoutX="82.0" layoutY="622.0" stylesheets="@../css/Style.css" text="00">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="59.0" fitWidth="54.0" layoutX="200.0" layoutY="605.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/Thermometer%20stock%20illustration_%20Illustration%20of%20hotter%20-%2016734905.jpeg" />
+               </image>
+            </ImageView>
+            <Label id="uva" fx:id="uvaDia_2" layoutX="253.0" layoutY="622.0" stylesheets="@../css/Style.css" text="00">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="59.0" fitWidth="54.0" layoutX="386.0" layoutY="605.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/Thermometer%20stock%20illustration_%20Illustration%20of%20hotter%20-%2016734905.jpeg" />
+               </image>
+            </ImageView>
+            <Label id="uva" fx:id="uvaDia_3" layoutX="439.0" layoutY="622.0" stylesheets="@../css/Style.css" text="00">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="59.0" fitWidth="54.0" layoutX="561.0" layoutY="605.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/Thermometer%20stock%20illustration_%20Illustration%20of%20hotter%20-%2016734905.jpeg" />
+               </image>
+            </ImageView>
+            <Label id="uva" fx:id="uvaDia_4" layoutX="614.0" layoutY="622.0" stylesheets="@../css/Style.css" text="00">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="59.0" fitWidth="54.0" layoutX="741.0" layoutY="605.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/Thermometer%20stock%20illustration_%20Illustration%20of%20hotter%20-%2016734905.jpeg" />
+               </image>
+            </ImageView>
+            <Label id="uva" fx:id="uvaDia_5" layoutX="794.0" layoutY="622.0" stylesheets="@../css/Style.css" text="00">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="59.0" fitWidth="54.0" layoutX="915.0" layoutY="605.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/Thermometer%20stock%20illustration_%20Illustration%20of%20hotter%20-%2016734905.jpeg" />
+               </image>
+            </ImageView>
+            <Label id="uva" fx:id="uvaDia_6" layoutX="968.0" layoutY="622.0" stylesheets="@../css/Style.css" text="00">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="59.0" fitWidth="54.0" layoutX="1096.0" layoutY="605.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../recursos/img/Thermometer%20stock%20illustration_%20Illustration%20of%20hotter%20-%2016734905.jpeg" />
+               </image>
+            </ImageView>
+            <Label id="uva" fx:id="uvaDia_7" layoutX="1149.0" layoutY="622.0" stylesheets="@../css/Style.css" text="00">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="EntradaMunicipio" layoutX="709.0" layoutY="32.0" />
+            <Label id="local" fx:id="comunidad" layoutX="907.0" layoutY="26.0" stylesheets="@../css/Style.css" text="Comunidad">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ComboBox id="combo" fx:id="Comunidad" layoutX="1016.0" layoutY="27.0" onAction="#selectorComunidad" prefWidth="150.0" stylesheets="@../css/Style.css" />
+            <ComboBox id="combo" fx:id="Provincia" layoutX="1017.0" layoutY="61.0" onAction="#selectorProvincia" prefWidth="150.0" stylesheets="@../css/Style.css" />
+            <Label id="local" fx:id="provincia" layoutX="921.0" layoutY="60.0" stylesheets="@../css/Style.css" text="Provincia">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ComboBox id="combo" fx:id="Municipio" layoutX="1018.0" layoutY="99.0" onAction="#selectorMunicipio" prefWidth="150.0" stylesheets="@../css/Style.css" />
+            <Label id="local" fx:id="municpio2" layoutX="907.0" layoutY="98.0" stylesheets="@../css/Style.css" text="Municipio">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button id="btn" fx:id="btnSearch" layoutX="711.0" layoutY="65.0" mnemonicParsing="false" onAction="#BTNbuscarMunicipio" prefHeight="27.0" prefWidth="149.0" stylesheets="@../css/Style.css" text="Buscar">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Label id="local" fx:id="municipio1" layoutX="590.0" layoutY="31.0" stylesheets="@../css/Style.css" text="Municipio">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label id="local" fx:id="idioma" layoutX="348.0" layoutY="31.0" stylesheets="@../css/Style.css" text="Selecciona un Idioma  ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button id="btn" fx:id="espanyol" layoutX="364.0" layoutY="65.0" mnemonicParsing="false" onAction="#btnEspañol" prefHeight="27.0" prefWidth="80.0" stylesheets="@../css/Style.css" text="Español">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button id="btn" fx:id="english" layoutX="450.0" layoutY="65.0" mnemonicParsing="false" onAction="#btnEnglish" prefHeight="27.0" prefWidth="70.0" stylesheets="@../css/Style.css" text="English">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <Line endX="15.0" endY="225.0" startX="1182.0" startY="225.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <Line endX="8.0" endY="584.0" layoutX="10.0" layoutY="10.0" startX="1175.0" startY="584.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <Line endX="-7.0" endY="351.0" layoutX="20.0" layoutY="20.0" startX="1168.0" startY="351.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <ImageView fitHeight="187.0" fitWidth="284.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../recursos/img/aemet_91_original.jpg" />
+         </image>
+      </ImageView>
+      <Line endX="-4.0" endY="404.0" layoutX="20.0" layoutY="20.0" startX="1163.0" startY="404.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+   </children>
+</AnchorPane>

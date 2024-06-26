@@ -1,0 +1,74 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#anchor{
+	 -fx-background-color: linear-gradient(to top left, #29CBF3 ,#29CBF3 ,#29CBF3 ,#29CBF3 , #29CBF3 ,#29CBF3 , #C6F7FA, #E5F8F9, white, white, white);
+}
+
+
+
+
+#combo:hover{
+	-fx-background-color: #6a5acd;
+	-fx-font-family: "Hervetica";
+	-fx-font-weight: bold;
+}
+
+
+#local{
+	-fx-font-family: "Hervetica";
+	-fx-font-weight: bold;
+	-fx-font-size: 18px;
+}
+
+
+#btn{
+	-fx-font-family: "Hervetica";
+	-fx-font-weight: bold;
+}
+#btn:hover{
+	-fx-background-color: #6a5acd;
+	-fx-font-family: "Hervetica";
+	-fx-font-weight: bold;
+	-fx-text-fill: white;
+}
+
+#humedad{
+	-fx-font-weight: bold;
+}
+
+#dia{
+    -fx-font-family: "Hervetica";
+	-fx-font-weight: bold;
+	-fx-font-size: 18px;	
+}
+
+#fecha{
+	-fx-font-weight: bold;
+	-fx-font-size: 16px;
+}
+
+#temperatura{
+	-fx-font-weight: bold;
+	-fx-font-size: 16px;
+}
+
+#cielo{
+	-fx-font-family: "Hervetica";
+	-fx-font-weight: bold;
+}
+
+#lluviaTxt{
+	-fx-font-family: "Hervetica";
+	-fx-font-weight: bold;
+}
+#lluvia{
+	-fx-font-weight: bold;
+}
+
+#velocidad{
+	-fx-font-weight: bold;
+}
+
+#uva{
+	-fx-font-weight: bold;
+}
